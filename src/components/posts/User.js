@@ -75,6 +75,7 @@ export const User = () =>{
 
     return (
         <div className="row justify-content-center">
+            <h3>Users</h3>
             <div className="col-md-12">
                 <div className="">
                     <div className="">
@@ -82,7 +83,8 @@ export const User = () =>{
                             <thead className='bg-primary text-white'>
                                 <tr>
                                     <th scope="col">Id</th>
-                                    <th scope="col">Category</th>
+                                    <th scope="col">User</th>
+                                    <th scope="col">Email</th>
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>
@@ -91,6 +93,7 @@ export const User = () =>{
                                 <tr key={user.id}>
                                     <td>{user.id}</td>
                                     <td>{user.name}</td>
+                                    <td>{user.email}</td>
                                     <td>
                                     <button 
                                             onClick={()=>callModal(user)} 

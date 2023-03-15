@@ -62,6 +62,7 @@ export const Category = () => {
 
     return (
         <div className="row justify-content-center">
+            <h3>Categories</h3>
             <div className="col-md-12">
                 <div className="">
                     <div className="">
